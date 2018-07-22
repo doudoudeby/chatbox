@@ -1,14 +1,43 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Chatbox register
     </ion-title>
   </ion-navbar>
 </ion-header>
 
+
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+   
+
+     
+
+          <ion-item>
+            <ion-label fixed>Nom</ion-label>
+            <ion-input type="text" value="" [(ngModel)] = "user.Nom" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label fixed>Prenom</ion-label>
+            <ion-input type="text" value="" [(ngModel)] = "user.Prenom" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label fixed>Username</ion-label>
+            <ion-input type="email" [(ngModel)] = "user.email"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label fixed>Password</ion-label>
+            <ion-input type="password" [(ngModel)] = "user.password"></ion-input>
+          </ion-item>
+        
+   
+
+        <div padding>
+            <button block ion-button class="submit-btn" full type="submit" (click) ="Register(user)" > Register</button>
+            <button block ion-button class="submit-btn" full type="submit" (click) ="Login()" > Login</button>
+        </div>
+   
 </ion-content>
