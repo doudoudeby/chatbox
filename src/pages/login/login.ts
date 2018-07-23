@@ -3,6 +3,8 @@ import {  NavController, NavParams } from 'ionic-angular';
 import { User } from '../../models/user';
 
 import { AngularFireAuth } from 'angularfire2/auth'
+//import { AcceuilPage } from '../acceuil/acceuil';
+// import { ProfilPage } from '../profil/profil';
 import { AcceuilPage } from '../acceuil/acceuil';
 
 /**

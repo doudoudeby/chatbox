@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { AcceuilPage } from '../pages/acceuil/acceuil';
+import { ProfilPage } from '../pages/profil/profil';
 
 
 import { AngularFireModule } from 'angularfire2';
@@ -31,7 +32,8 @@ const firebaseConfig = {
     MyApp,
     HomePage,
     LoginPage,
-    AcceuilPage
+    AcceuilPage,
+    ProfilPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ const firebaseConfig = {
     MyApp,
     HomePage,
     LoginPage,
-    AcceuilPage
+    AcceuilPage,
+    ProfilPage
   ],
   providers: [
     StatusBar,
